@@ -1,0 +1,4 @@
+1：问题出现  避免dp px 适应相对百分比或相对布局
+2：设定其固定 android:screenOrientation="portrait"     android:screenOrientation="landscape" 全屏
+3：横屏与竖屏不同布局 ， Create LandSpace 
+4：切换出发ondestory，会进行重新加载。使用Bundle keyvalue类型的数据对象 onSaveInstance方法 。默认第一次进入bundle值会为空。 不是永久性保存

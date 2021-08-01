@@ -1,0 +1,3 @@
+1：双向绑定 以前使用的是view绑到controler ， 今天出来的是controler的逻辑操作到view
+
+2：onClick注意为@{（）-> 呼叫函数名}

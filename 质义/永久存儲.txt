@@ -1,0 +1,42 @@
+官方文档
+
+4中保存方式：非Root情况下 非越狱  
+1：内部
+2：允许外部访问  手机链接电脑 电脑操作的
+3：sp 内部存储  但是简单的
+4：database 数据库存储 
+
+应用sp 到Viewmodel中 。 这就是为什么 MVC中 Model最重要。
+
+sp两种创建方式的区别：全局访问， 和默认当前activity进行访问
+apply（）或者commit（） apply为非同步 可避免全局多个地方操作造成数据错误。
+
+内存泄漏：
+问题 ，  myData（this） 改成 mydata（getapplication（）） 
+this 代表当前activity的引用 ， 如果当前ac通过旋转屏幕等消失掉，在重新创建后就不是原来的那个引用地址了。
+但是mydata 保存了一个前边销毁的那个ac的引用， 所以在虚拟机进行清理时 前边的那个ac就不会被清除出去。
+
+封装SP 
+
+让Viewmodel 有永久存储的功能、
+
+
+text 前边有个小扳手  : 设计图上可见 项目总不可见
+
+
+ViewModel   andriodViewModel（内部自己维护了一个application） application extend content 可访问res 
+
+修饰符：
+private 类中
+public 项目中
+protect 子类中
+不加前嘴 包里 比如com。expand。demo
+
+onPause 数据的存储    因为操作外部存储 耗时
+
+注解取消掉警告， 选择范围。 另外一种是进行空指针验证 
+代码格式化 reformat  reanged xml
+
+Fragment 依存Ac   为了适应大屏幕设备而生
+栈的数据结构 
+

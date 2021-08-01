@@ -1,0 +1,26 @@
+1：基本跳转 写法流程  注意action 有其一些属性
+
+2：跳转带值  第一种Aragment 第二种 Bundle 
+	在action 中可以覆蓋裏邊的
+	
+传递名字过去 动态输入的
+
+3：动画  
+	4中动画  关键帧的概念
+
+
+4：alina 对其操作
+跟数据有关进行绑定， 跟点击或者是逻辑 直接在ac 或者是fragment中写
+
+注意在Fragment 进行写Viewmodel的写法是不同的。
+
+在不同的fagement中请求到的Viewmodel都是一个对象， 这也就是Singleton的含义 ， 故能共享数据
+
+bug1 ： Back按键会将原来的fragment进行回弹回来，这样出发了seekbar的listenter 。 系统saveenabled = false 因为默认为true 
+
+栈  ： 设置栈顶为第一个homefragment   inclusive 勾选 。 因为入栈 就是把homeFragment压入地下， 然后上边新来的   。
+ 比如Ac为容器 ， 看着是左右动画执行切换， 数据结构中其实 往下压 入栈 出栈 实现切换
+
+
+
+

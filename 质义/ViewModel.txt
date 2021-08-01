@@ -1,0 +1,14 @@
+1：jetpack带火箭 及ViewModel的定义概念
+
+2：ViewModel + Livedata + Room
+
+Viewmodel 的用法 及 源码阅读
+https://www.cnblogs.com/guanxinjing/p/13442423.html
+https://www.cnblogs.com/guanxinjing/p/12198971.html
+
+3：优点 ，界面切换数据任然存在 
+
+4：模块化？
+
+
+

@@ -1,0 +1,9 @@
+作用：底层数据变化后主动通知
+
+1：Mvc 及 mvvm架构讲解 很清晰
+Mvc 中model最重要  contorl 是ac或者是fragment 。 V 是树形的layout 里边的View控件 
+contorl拿到View引用 指向View    Contorl内部有UI data ， 
+MVVM 中 UI data 用Livadata 分离出来   内部的view引用 通过databanding 进行管理。 这样在View变化后 不需要改变contorl
+
+2：
+

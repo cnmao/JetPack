@@ -1,0 +1,11 @@
+1：Activity为功能代表页，比如分享功能，只调用起来分享界面
+2：Google官方声明周期及其方法执行时机 ， 官方提供callback给开发者，供其开发自己代码
+3：验证其声明周期， 特别说明onDestory的两种执行情况 a：内存紧张 b：切换横竖屏
+
+4：重回 计数类  onStart onStop 无效 改变的是UI界面的暂停 ，而不是系统内部的暂停 。  onPase 和 onResume 一起使用。
+但是写法出现问题：1：当前声明周期函数如果做很多其他功能， 那么就会出问题。 2：而且这个计数的功能没有可移植性 ，如果其他地方需要使用，就要重写。
+因此：通过lifeCycle 进行重新写
+implement lifeCycleObserver接口。lifeCycle的作用，观察ac生命周期。
+ac系统自己实现了lifeCycle 通过使用getLifeCycle获得。 如同 getView（）获取当前界面View对象
+静态变量 切换ac横竖屏 实现继续计数。 好的方式是放进onsvaeinstance或者是Viewmodel中。
+
