@@ -13,7 +13,7 @@ import com.example.livedata.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
     private LiveDataWithIiewModel liveDataWithIiewModel;
-    ActivityMainBinding binding  ;
+    ActivityMainBinding binding   ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
