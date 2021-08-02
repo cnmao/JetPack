@@ -1,7 +1,5 @@
 package com.example.livedata;
 
-import android.view.LayoutInflater;
-
 import androidx.annotation.NonNull;
 import androidx.lifecycle.ViewModel;
 import androidx.lifecycle.ViewModelProvider;
